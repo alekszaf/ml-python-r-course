@@ -1,4 +1,4 @@
-#Demo content
+# Basics of R
 
 print('Hello world')
 
@@ -10,4 +10,15 @@ y <- 1:10 # Same result as above
 
 x <- y <- 1:10 # Create two arrays of the same length
 
-x + y # Add two arrays: each element from one array will be added to the corresponding element of the second array
+z <- x + y # Add two arrays: each element from one array will be added to the corresponding element of the second array
+
+
+# Packages
+
+library(ggplot2) # Load ggplot2
+
+browseURL("https://cran.r-project.org/web/views/") # Check the list of available packages on CRAN
+
+install.packages("LiblineaR") # Install library for linear predictive models
+
+library() # Gives list of all the packages installed
