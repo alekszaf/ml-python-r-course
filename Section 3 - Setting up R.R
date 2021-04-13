@@ -76,3 +76,9 @@ barplot(y[order(y)], horiz = TRUE, col = c("bisque", "thistle3", "tomato2", "aqu
 barplot(y[order(y)], horiz = TRUE, col = c("bisque", "thistle3", "tomato2", "aquamarine"), border = NA, main = "Frequency of \n regions") # Add title, \n indicates new line
 barplot(y[order(y)], horiz = TRUE, col = c("bisque", "thistle3", "tomato2", "aquamarine"), border = NA, main = "Frequency of \n regions", xlab = "Number of customers")
 
+
+# Plotting histograms
+
+hist(Customer$Age)
+hist(Customer$Age, breaks = 5)
+hist(Customer$Age, breaks = c(0, 40, 60, 100), freq=TRUE, col = "plum")
