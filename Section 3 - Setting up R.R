@@ -60,7 +60,19 @@ str(Customer)
 View(Customer) # Show the full table of the dataset
 
 
-# Plotting
+# Plotting bar plots
 
 y <- table(Customer$Region) # Show aggregate of values in Region column
+
+barplot(y) # Create bar plot of region frequency
+barplot(y[order(y)]) # Bars in ascending order
+barplot(y[order(-y)]) # Bars in descending order
+barplot(y[order(y)], horiz = TRUE, col = "blue") # Plot bars horizontally, make them blue
+barplot(y[order(y)], horiz = TRUE, col = c("bisque", "thistle3", "tomato2", "aquamarine"))
+
+colors() # Look up all the colors
+
+barplot(y[order(y)], horiz = TRUE, col = c("bisque", "thistle3", "tomato2", "aquamarine"), border = NA) # Remove borders of the bar
+barplot(y[order(y)], horiz = TRUE, col = c("bisque", "thistle3", "tomato2", "aquamarine"), border = NA, main = "Frequency of \n regions") # Add title, \n indicates new line
+barplot(y[order(y)], horiz = TRUE, col = c("bisque", "thistle3", "tomato2", "aquamarine"), border = NA, main = "Frequency of \n regions", xlab = "Number of customers")
 
